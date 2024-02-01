@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for content in news %}
+        <h1>{{ content.title }}</h1><br>
+        <p>{{ content.content }}</p><br>
+        <p>01/02/2024</p><br>
+    {% endfor %} 
+</body>
+</html>
