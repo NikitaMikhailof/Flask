@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стартовая страница</title>
+</head>
+<body>
+    <h1>Страница ввода логина и пароля пользователя</h1>
+    <form action="{{ url_for('form') }}", method="post" enctype="multipart/form-data">
+        <input type="text" name="login" placeholder="Введите логин">
+        <input type="password" name="password"  placeholder="Введите пароль"> 
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>
