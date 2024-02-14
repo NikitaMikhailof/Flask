@@ -73,8 +73,6 @@ def incrimenet_process(arr):
 
 '''асинхронный подход'''
 
-arr = [randint(1, 100) for i in range(10**6)]
-
 async def worker_async(low, high):
     global counter
     for num in arr[low:high + 1]:
